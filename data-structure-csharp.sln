@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructureListaLigada03"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructureRecursion02", "DataStructureRecursion02\DataStructureRecursion02.csproj", "{2B62530E-40B5-4158-8469-BFA3CAC5108E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructureBubbleSort04", "DataStructureBubbleSort04\DataStructureBubbleSort04.csproj", "{EB832C12-23AE-4356-8778-47377248E102}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{2B62530E-40B5-4158-8469-BFA3CAC5108E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B62530E-40B5-4158-8469-BFA3CAC5108E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B62530E-40B5-4158-8469-BFA3CAC5108E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB832C12-23AE-4356-8778-47377248E102}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB832C12-23AE-4356-8778-47377248E102}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB832C12-23AE-4356-8778-47377248E102}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB832C12-23AE-4356-8778-47377248E102}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
