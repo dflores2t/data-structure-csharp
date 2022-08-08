@@ -5,3 +5,4 @@
 3.DataStructureRecursion.
 3.DataStructureListaLigadaI
 4.DataStructureListaBubbleSort
+5.DataStructureInsertionSort
