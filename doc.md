@@ -8,3 +8,4 @@
 5.DataStructureInsertionSort
 6.DataStructureSelectionSort
 7.DataStructureMergeSort.
+8.DataStructureQuicSort
