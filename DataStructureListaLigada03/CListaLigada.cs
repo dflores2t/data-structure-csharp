@@ -6,10 +6,10 @@ public class CListaLigada
   private CNodo ancla;
 
   //esta variable de referencia nos ayuda a trabajar con la lista
-  private CNodo trabajo;
+  private CNodo? trabajo;
 
   //esta variabale de referencia apoya en ciertas operaciones de la lista
-  private CNodo trabajo2;
+  private CNodo? trabajo2;
 
   //constructuro
   public CListaLigada()
@@ -201,7 +201,7 @@ public class CListaLigada
   //OBTENER POR INDICE
   public CNodo ObtenerPorIndice(int pIndice)
   {
-    CNodo trabajo2 = null;
+    CNodo? trabajo2 = null;
     int indice = -1;
 
     trabajo = ancla;

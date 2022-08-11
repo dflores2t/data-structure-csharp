@@ -6,3 +6,5 @@
 3.DataStructureListaLigadaI
 4.DataStructureListaBubbleSort
 5.DataStructureInsertionSort
+6.DataStructureSelectionSort
+7.DataStructureMergeSort.
