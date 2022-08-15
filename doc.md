@@ -9,3 +9,6 @@
 6.DataStructureSelectionSort
 7.DataStructureMergeSort.
 8.DataStructureQuicSort
+9.DataStructureStackPila
+10.DataStructureBalanceDeSignos.
+11.DataStructureQueue
