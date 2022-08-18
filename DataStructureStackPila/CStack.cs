@@ -1,6 +1,7 @@
 namespace DataStructurStackPila;
 
-public class CStack{
+public class CStack
+{
   // HACEMOS LA IMPLEMENTACION BASADA EN UNA LISTA LIGADA.
   //FINES EDUCATIVOS C# YA CONTIENE LA CLASE STACK
   private CNodo? ancla;
@@ -16,7 +17,8 @@ public class CStack{
     ancla.Siguiente = null;
   }
   //push
-  public void Push(int pDato){
+  public void Push(int pDato)
+  {
     //creamos el nodo temporal
     CNodo? temp = new CNodo();
     temp.Dato = pDato;
@@ -29,12 +31,14 @@ public class CStack{
   }
 
   //POR
-  public int Pop(){
+  public int Pop()
+  {
     //esta version no contiene codigo de seguridad
     //colocar una excepcion cuando se intente hacer un pop a un stack vacio
     int valor = 0;
     //llevamos a cabo el trabajo solo si hay elementos en el stack
-    if(ancla.Siguiente != null){
+    if (ancla.Siguiente != null)
+    {
       //obtenemos el dato correspondiente
       trabajo = ancla.Siguiente;
       valor = trabajo.Dato;
@@ -47,12 +51,14 @@ public class CStack{
   }
 
   //PEEK
-  public int Peek(){
+  public int Peek()
+  {
     //esta version no contiene codigo de seguridad.
     //colocar la excepicon cuando se intete hacer un pop a un stack vacio
     int valor = 0;
     //llevamos a cabo el trabao solo si hay elementos en el stakc
-    if(ancla.Siguiente !=null){
+    if (ancla.Siguiente != null)
+    {
       //obtenemos el dato correspondiente.
       trabajo = ancla.Siguiente;
       valor = trabajo.Dato;
@@ -61,11 +67,13 @@ public class CStack{
   }
 
   //TRANSVERSA
-  public void Transversa(){
+  public void Transversa()
+  {
     //trabajo al inicio
     trabajo = ancla;
     //recorremos hasta encontrar el final
-    while(trabajo.Siguiente ! = null){
+    while (trabajo.Siguiente != null)
+    {
       //avanzamos trabajo
       trabajo = trabajo.Siguiente;
       //obtenemos el dato y lo mostramos
