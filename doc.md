@@ -13,3 +13,4 @@
 10.DataStructureBalanceDeSignos.
 11.DataStructureQueue
 12.DataStructureArbol
+13.DataStructureArbolBinario
