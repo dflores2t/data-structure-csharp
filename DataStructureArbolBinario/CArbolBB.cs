@@ -36,24 +36,29 @@ public class CArbolBB
   }
 
   //TRANSVERSA
-  public void Transversa(CNodo pNodo){
-    if(pNodo == null){
+  public void Transversa(CNodo pNodo)
+  {
+    if (pNodo == null)
+    {
       return;
     }
     // me proceso a mi
-    for (int n = 0; n < i; n++){
+    for (int n = 0; n < i; n++)
+    {
       Console.Write(" ");
     }
-      Console.WriteLine(pNodo.Dato);
+    Console.WriteLine(pNodo.Dato);
     //si tengo izquierda , proceso a la izquierda
-    if(pNodo.Izq !=null){
+    if (pNodo.Izq != null)
+    {
       i++;
       Console.Write("I ");
       Transversa(pNodo.Izq);
       i--;
     }
     //si tengo derecha , proceso a la derecha
-    if(pNodo.Der !=null){
+    if (pNodo.Der != null)
+    {
       i++;
       Console.Write("D ");
       Transversa(pNodo.Der);
@@ -62,14 +67,17 @@ public class CArbolBB
   }
 
   //ENCONTRADR MINIMO
-  public int EncuentraMinimo(CNodo pNodo){
-    if(pNodo ==null){
+  public int EncuentraMinimo(CNodo pNodo)
+  {
+    if (pNodo == null)
+    {
       return 0;
     }
     trabajo = pNodo;
     int minimo = trabajo.Dato;
 
-    while(trabajo.Izq !=null){
+    while (trabajo.Izq != null)
+    {
       trabajo = trabajo.Izq;
       minimo = trabajo.Dato;
     }
@@ -77,7 +85,8 @@ public class CArbolBB
   }
 
   //ENCONTRAR DATO MAYOR
-public int  EncuentraMaximo(CNodo pNodo){
+  public int EncuentraMaximo(CNodo pNodo)
+  {
     if (pNodo == null)
     {
       return 0;
@@ -91,14 +100,17 @@ public int  EncuentraMaximo(CNodo pNodo){
       minimo = trabajo.Dato;
     }
     return minimo;
-}
+  }
 
   //TRANSVERSA INORDER
-  public void TransversaOrdenada(CNodo pNodo){
-    if(pNodo == null){
+  public void TransversaOrdenada(CNodo pNodo)
+  {
+    if (pNodo == null)
+    {
       return;
     }
-    if(pNodo.Izq !=null){
+    if (pNodo.Izq != null)
+    {
       i++;
       TransversaOrdenada(pNodo.Izq);
       i--;
@@ -106,7 +118,8 @@ public int  EncuentraMaximo(CNodo pNodo){
     Console.Write("{0} ", pNodo.Dato);
 
     //si tengo derecha , proceso a la derecha
-    if(pNodo.Der != null){
+    if (pNodo.Der != null)
+    {
       i++;
       TransversaOrdenada(pNodo.Der);
       i--;
@@ -114,17 +127,75 @@ public int  EncuentraMaximo(CNodo pNodo){
   }
 
   //ENCONTRAR NODO MINIMO
-  public CNodo EncuentraNodoMinimo(CNodo pNodo){
-    if(pNodo == null){
+  public CNodo EncuentraNodoMinimo(CNodo pNodo)
+  {
+    if (pNodo == null)
+    {
       return null;
     }
     trabajo = pNodo;
     int minimo = trabajo.Dato;
 
-    while(trabajo.Izq !=null){
+    while (trabajo.Izq != null)
+    {
       trabajo = trabajo.Izq;
       minimo = trabajo.Dato;
     }
     return trabajo;
   }
+
+  public CNodo BuscarPadre(int pDato, CNodo pNodo)
+  {
+    CNodo temp = null;
+    if (pNodo == null)
+    {
+      return null;
+    }
+    //verifico si soy padre
+    if (pNodo.Izq != null)
+    {
+      if (pNodo.Izq.Dato == pDato)
+      {
+        return pNodo;
+
+      }
+    }
+    if (pNodo.Der != null)
+    {
+      if (pNodo.Der.Dato == pDato)
+      {
+        return pNodo;
+      }
+    }
+    //si tengo izquierda, proceso a la izquierda.
+    if (pNodo.Izq != null && pDato < pNodo.Dato)
+    {
+      temp = BuscarPadre(pDato, pNodo.Izq);
+    }
+    //si tengo derecha, proceso a la derecho
+    if (pNodo.Der != null && pDato > pNodo.Dato)
+    {
+      temp = BuscarPadre(pDato, pNodo.Der);
+    }
+    return temp;
+  }
+
+  //PSEUDOCODIGO
+  // public CNodo Borrar(int pDato,CNodo pNodo){
+  //   if(pNodo != null){
+  //     return pNodo;
+  //   }
+  //   else{
+  //     if(pDato < pNodo.Dato ){
+  //       pNodo.Izq = Borrar(pNodo.Izq, pDato);
+  //     }else{
+  //       if(pDato>pNodo.Dato){
+  //         pNodo.Der = Borrar(pNodo.Der, pDato);
+  //       }else{
+  //         //aqui los casos
+  //       }
+  //     }
+  //   }
+
+  // }
 }

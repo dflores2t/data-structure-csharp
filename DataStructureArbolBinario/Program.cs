@@ -1,8 +1,10 @@
 ﻿using static System.Console;
 namespace DataStructureArbolBinario;
 
-public class Program {
-  static void Main(string[] args){
+public class Program
+{
+  static void Main(string[] args)
+  {
     CArbolBB arbol = new CArbolBB();
 
     CNodo raiz = arbol.Insertar(6, null);
@@ -24,16 +26,21 @@ public class Program {
 
     arbol.Transversa(raiz);
 
-    Console.WriteLine("EL MENOS ES {0} ", arbol.EncuentraMinimo(raiz));
-    Console.WriteLine("EL MENOS ES {0} ", arbol.EncuentraMaximo(raiz));
+    // Console.WriteLine("EL MENOS ES {0} ", arbol.EncuentraMinimo(raiz));
+    // Console.WriteLine("EL MENOS ES {0} ", arbol.EncuentraMaximo(raiz));
 
-    arbol.TransversaOrdenada(raiz);
-    Console.WriteLine();
-    CNodo temp = arbol.EncuentraNodoMinimo(raiz);
-    Console.WriteLine(temp.Dato);
-    Console.WriteLine();
-    Console.WriteLine("-------------");
-    Console.WriteLine();
-    System.Console.WriteLine();
+    // arbol.TransversaOrdenada(raiz);
+    // Console.WriteLine();
+    // CNodo temp = arbol.EncuentraNodoMinimo(raiz);
+    // Console.WriteLine(temp.Dato);
+    // Console.WriteLine();
+    // Console.WriteLine("-------------");
+    // Console.WriteLine();
+    // System.Console.WriteLine();
+
+    System.Console.WriteLine("----------------------");
+    System.Console.WriteLine("Buscar al padre");
+    CNodo padre = arbol.BuscarPadre(11, raiz);
+    System.Console.WriteLine("padre encontrado: {0} ", padre.Dato);
   }
 }
