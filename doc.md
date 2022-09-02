@@ -16,3 +16,4 @@
 13.DataStructureArbolBinario
 14.DataStructureEvaluacionExpresiones
 15.DataStructurePrefixPostfix
+15.DataSturctureTablaHash

@@ -17,7 +17,7 @@ public class CStack
     ancla.Siguiente = null;
   }
   //push
-  public void Push(int pDato)
+  public void Push(char pDato)
   {
     //creamos el nodo temporal
     CNodo? temp = new CNodo();
@@ -31,11 +31,11 @@ public class CStack
   }
 
   //POR
-  public int Pop()
+  public char Pop()
   {
     //esta version no contiene codigo de seguridad
     //colocar una excepcion cuando se intente hacer un pop a un stack vacio
-    int valor = ' ';
+    char valor = ' ';
     //llevamos a cabo el trabajo solo si hay elementos en el stack
     if (ancla.Siguiente != null)
     {
@@ -51,11 +51,11 @@ public class CStack
   }
 
   //PEEK
-  public int Peek()
+  public char Peek()
   {
     //esta version no contiene codigo de seguridad.
     //colocar la excepicon cuando se intete hacer un pop a un stack vacio
-    int valor = ' ';
+    char valor = ' ';
     //llevamos a cabo el trabao solo si hay elementos en el stakc
     if (ancla.Siguiente != null)
     {
