@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15DataStructurePrefix", "15
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16DataStructureTablaHash", "16DataStructureTablaHash\16DataStructureTablaHash.csproj", "{0E207CF2-4D3B-45AD-A0C4-0E999DF913FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16DataStructureDireccionamientoAbierto", "17DataStructureDireccionamientoAbierto\16DataStructureDireccionamientoAbierto.csproj", "{342F99CD-B4C9-4DD1-87B5-CCC797706944}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -108,5 +110,9 @@ Global
 		{0E207CF2-4D3B-45AD-A0C4-0E999DF913FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E207CF2-4D3B-45AD-A0C4-0E999DF913FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E207CF2-4D3B-45AD-A0C4-0E999DF913FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{342F99CD-B4C9-4DD1-87B5-CCC797706944}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{342F99CD-B4C9-4DD1-87B5-CCC797706944}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{342F99CD-B4C9-4DD1-87B5-CCC797706944}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{342F99CD-B4C9-4DD1-87B5-CCC797706944}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
