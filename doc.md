@@ -18,3 +18,4 @@
 15.DataStructurePrefixPostfix
 16.DataSturctureTablaHash
 17.DataStructureDireccionamientoAbierto
+18.DataStructureSondeoLinealCuadradtico
